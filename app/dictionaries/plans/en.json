@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Pricing",
+  "headlinePart1": "Choose your",
+  "headlineAccent": "plan.",
+  "subtitle": "Tailored strategic solutions for teams of every scale — from growing enterprises to bespoke engagements.",
+  "tabs": {
+    "enterprise": "Enterprise",
+    "custom": "Custom"
+  },
+  "sideText": {
+    "line1": "Global Partnerships &",
+    "line2": "Multidisciplinary Firm"
+  },
+  "cta": "Get in Touch",
+  "emptyState": {
+    "standard": "At GPMF, standard plans are coming soon. Stay tuned.",
+    "custom": "At GPMF, custom plans are coming soon. Stay tuned."
+  },
+  "meta": {
+    "title": "Plans & Pricing | GPMF",
+    "description": "Explore GPMF strategic consulting plans — from diagnostics and sprints to executive partnerships."
+  }
+}

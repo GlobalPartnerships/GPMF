@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Tarification",
+  "headlinePart1": "Choisissez votre",
+  "headlineAccent": "offre.",
+  "subtitle": "Des solutions stratégiques sur mesure pour des équipes de toute taille — des entreprises en croissance aux engagements personnalisés.",
+  "tabs": {
+    "enterprise": "Entreprise",
+    "custom": "Sur Mesure"
+  },
+  "sideText": {
+    "line1": "Global Partnerships &",
+    "line2": "Multidisciplinary Firm"
+  },
+  "cta": "Nous Contacter",
+  "emptyState": {
+    "standard": "Chez GPMF, les offres standard arrivent bientôt. Restez à l'écoute.",
+    "custom": "Chez GPMF, les offres sur mesure arrivent bientôt. Restez à l'écoute."
+  },
+  "meta": {
+    "title": "Offres et Tarifs | GPMF",
+    "description": "Découvrez les offres de conseil stratégique GPMF — du diagnostic et sprint jusqu'aux partenariats exécutifs."
+  }
+}

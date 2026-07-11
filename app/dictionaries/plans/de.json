@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Preise",
+  "headlinePart1": "Wählen Sie Ihren",
+  "headlineAccent": "Plan.",
+  "subtitle": "Maßgeschneiderte strategische Lösungen für Teams jeder Größe — von wachsenden Unternehmen bis hin zu individuellen Engagements.",
+  "tabs": {
+    "enterprise": "Unternehmen",
+    "custom": "Individuell"
+  },
+  "sideText": {
+    "line1": "Global Partnerships &",
+    "line2": "Multidisciplinary Firm"
+  },
+  "cta": "Kontakt aufnehmen",
+  "emptyState": {
+    "standard": "Bei GPMF kommen die Standardpläne bald. Bleiben Sie dran.",
+    "custom": "Bei GPMF kommen die individuellen Pläne bald. Bleiben Sie dran."
+  },
+  "meta": {
+    "title": "Angebote und Preise | GPMF",
+    "description": "Entdecken Sie die strategischen Beratungsangebote von GPMF — von Diagnosen und Sprints bis zu Executive-Partnerschaften."
+  }
+}

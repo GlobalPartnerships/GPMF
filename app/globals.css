@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f6;
+  --foreground: #1a1c1c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-burgundy: #7A0F32;
+  --color-burgundy-dark: #56001f;
+  --color-charcoal: #2E2E2E;
+  --color-warmgray: #F5F5F5;
+  --color-paper: #f5f1ec;
+  --color-surface-variant: #564144;
+  --color-outline: #897174;
+  --color-rose-dim: #ffb2be;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-fell: var(--font-fell);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* ── Design-system utilities ── */
+
+@utility tick {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+    vertical-align: middle;
+    margin-right: 14px;
+    opacity: 0.6;
+  }
+}
+
+@utility whisper-shadow {
+  box-shadow:
+    0 30px 60px -12px rgba(122, 15, 50, 0.07),
+    0 8px 20px -10px rgba(122, 15, 50, 0.04);
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Nav link underline ── */
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 1px;
+  width: 0;
+  background: #c4b5b7;
+  transition: width 0.35s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Behavioral globals (JS-dependent) ── */
+
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 900ms ease,
+      transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .btn-sweep {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-sweep::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #56001f;
+    transform: translateX(-101%);
+    transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .btn-sweep:hover::before {
+    transform: translateX(0);
+  }
+  .btn-sweep > span {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* ── Keyframes (global, referenced by modules) ── */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes bar-rise {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+

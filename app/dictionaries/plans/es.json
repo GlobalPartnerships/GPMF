@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Precios",
+  "headlinePart1": "Elegí tu",
+  "headlineAccent": "plan.",
+  "subtitle": "Soluciones estratégicas a medida para equipos de cualquier escala — desde empresas en crecimiento hasta compromisos personalizados.",
+  "tabs": {
+    "enterprise": "Empresarial",
+    "custom": "Personalizado"
+  },
+  "sideText": {
+    "line1": "Global Partnerships &",
+    "line2": "Multidisciplinary Firm"
+  },
+  "cta": "Contactanos",
+  "emptyState": {
+    "standard": "En GPMF, los planes estándar están próximamente. Mantenete al tanto.",
+    "custom": "En GPMF, los planes personalizados están próximamente. Mantenete al tanto."
+  },
+  "meta": {
+    "title": "Planes y Precios | GPMF",
+    "description": "Explorá los planes de consultoría estratégica de GPMF — desde diagnósticos y sprints hasta alianzas ejecutivas."
+  }
+}

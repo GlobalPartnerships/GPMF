@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Casa Normandía | Reglas y Normas</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>??</text></svg>">
+    <meta name="description" content="Políticas y reglas de Casa Normandía. Conoce nuestras normas de convivencia, política de mascotas y registro de huéspedes para una estancia productiva.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config for Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rooted: {
+                            green: '#1B3022',
+                            terra: '#A45C40',
+                            cream: '#F5F2ED',
+                            burgundy: '#630D16',
+                            sand: '#E8E4D9',
+                            dark: '#111827'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F2ED;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A45C40;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-rooted-cream text-rooted-dark font-sans antialiased selection:bg-rooted-terra selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-rooted-cream/95 backdrop-blur-sm border-b border-rooted-terra/20 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold text-rooted-green tracking-tight">
+                Casa Normandía
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm tracking-wide">
+                <!-- Language Selector -->
+                <div class="flex items-center space-x-1 bg-white/80 px-3 py-1 rounded-full border border-rooted-terra/20">
+                    <span class="text-rooted-green font-bold px-2 py-1 rounded bg-rooted-cream">ES</span>
+                    <a href="politicas-en.html" class="text-gray-600 hover:text-rooted-terra transition-colors px-2 py-1">EN</a>
+                </div>
+                
+                <a href="index.html#bogota" class="hover:text-rooted-terra transition-colors">BOGOTÁ</a>
+                <a href="index.html#nilo" class="hover:text-rooted-terra transition-colors">NILO</a>
+                <a href="#reglas-casa" class="hover:text-rooted-terra transition-colors">REGLAS</a>
+                <button onclick="window.location.href='index.html#booking'" class="bg-rooted-terra text-white px-6 py-2 rounded-full hover:bg-rooted-green transition-colors shadow-lg transform hover:-translate-y-0.5">
+                    RESERVAR
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button (Unicode) -->
+            <button class="md:hidden text-2xl text-rooted-green">??</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-24 pb-16 bg-gradient-to-br from-rooted-green/10 to-rooted-terra/10">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-rooted-green mb-6">
+                Políticas de Casa Normandía
+            </h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                Este espacio está diseñado para profesionales y nómadas digitales que valoran la tranquilidad, el respeto y la productividad. 
+                Conoce nuestras reglas y políticas para garantizar una estancia productiva y agradable para todos.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#reglas-casa" class="bg-rooted-terra text-white px-6 py-3 rounded-full hover:bg-rooted-green transition-colors shadow-lg">
+                    ?? Reglas de la Casa
+                </a>
+                <a href="#politica-mascotas" class="bg-white text-rooted-terra border border-rooted-terra px-6 py-3 rounded-full hover:bg-rooted-terra hover:text-white transition-colors">
+                    ?? Política de Mascotas
+                </a>
+                <a href="#registro-huespedes" class="bg-rooted-green text-white px-6 py-3 rounded-full hover:bg-rooted-terra transition-colors shadow-lg">
+                    &#128203; Registro de Huéspedes
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Info Box -->
+    <section class="py-8 bg-rooted-sand">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-2xl shadow-lg border border-rooted-terra/20 p-8 max-w-4xl mx-auto">
+                <h2 class="text-2xl font-serif font-bold text-rooted-green mb-6 text-center">
+                    Lo que debes saber en 1 minuto
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-rooted-terra mt-1">&#128263;</div>
+                        <div>
+                            <h3 class="font-bold text-rooted-dark mb-1">Silencio total</h3>
+                            <p class="text-gray-600">Desde las 10 PM para garantizar descanso profundo.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-rooted-terra mt-1">&#128263;</div>
+                        <div>
+                            <h3 class="font-bold text-rooted-dark mb-1">Espacio 100% libre de humo</h3>
+                            <p class="text-gray-600">Prohibido fumar en todas las áreas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-rooted-terra mt-1">&#128263;</div>
+                        <div>
+                            <h3 class="font-bold text-rooted-dark mb-1">Lavandería disponible</h3>
+                            <p class="text-gray-600">Servicio por $100,000 COP por carga.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl text-rooted-terra mt-1">&#128263;</div>
+                        <div>
+                            <h3 class="font-bold text-rooted-dark mb-1">Check-out</h3>
+                            <p class="text-gray-600">A las 11:00 AM, favor seguir el checklist digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16">
+
+        <!-- Reglas de la Casa -->
+        <section id="reglas-casa" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-rooted-cream/50 rounded-2xl p-8 md:p-12 shadow-sm border border-rooted-terra/10">
+                        <h2 class="text-3xl font-serif text-rooted-green font-bold mb-6">?? Reglas de la Casa</h2>
+                        
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p class="mb-8">
+                                Este espacio está diseñado para profesionales y nómadas digitales que valoran la tranquilidad, el respeto y la productividad. 
+                                En caso de cualquier inconveniente, solicitamos a los huéspedes que mantengan la compostura y 
+                                aborden el problema de manera respetuosa y profesional.
+                            </p>
+
+                            <h3 class="text-2xl font-serif text-rooted-green mt-8 mb-4">?? Normas Generales</h3>
+                            
+
+                            <div class="space-y-6 mb-8">
+                                <div class="bg-white p-6 rounded-xl border-l-4 border-rooted-terra">
+                                    <h4 class="font-bold text-lg mb-2">1. Respeto y Profesionalismo</h4>
+                                    <p>Este es un espacio compartido. Se espera respeto hacia los demás huéspedes, vecinos y anfitriones.</p>
+                                    <ul class="mt-2 space-y-1">
+                                        <li> Evitar comportamiento que afecte la armonía o tranquilidad del lugar</li>
+                                        <li> Mantener un ambiente profesional y productivo</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-white p-6 rounded-xl border-l-4 border-rooted-terra">
+                                    <h4 class="font-bold text-lg mb-2">2. Horario de Silencio</h4>
+                                    <ul class="space-y-1">
+                                        <li> A partir de las 10:00 p.m. rige el horario de silencio estricto</li>
+                                        <li> Evita música, llamadas en voz alta o cualquier ruido que pueda incomodar</li>
+                                        <li> Priorizamos el descanso profundo para máxima productividad</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="text-2xl font-serif text-rooted-green mt-8 mb-4">?? Prohibiciones Importantes</h3>
+                            
+
+                            <div class="space-y-6 mb-8">
+                                <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                                    <h4 class="font-bold text-lg mb-2 text-red-700">1. Prohibición de Fumar</h4>
+                                    <ul class="space-y-1 text-gray-700">
+                                        <li> Está prohibido fumar dentro del alojamiento (incluye cigarrillos, electrónicos, tabaco armado)</li>
+                                        <li> Si deseas fumar, únicamente en áreas externas designadas</li>
+                                        <li> Incumplir esta regla conlleva cargos adicionales por limpieza profunda</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                                    <h4 class="font-bold text-lg mb-2 text-red-700">2. Velas, Inciensos y Fuego</h4>
+                                    <ul class="space-y-1 text-gray-700">
+                                        <li> No se permite encender velas, inciensos ni ningún objeto con fuego</li>
+                                        <li> Esta medida evita incendios, manchas y olores persistentes</li>
+                                        <li> Daños ocasionados por incumplimiento se cobrarán al responsable</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3 class="text-2xl font-serif text-rooted-green mt-8 mb-4">?? Cuidado del Espacio</h3>
+                            
+
+                            <div class="space-y-6 mb-8">
+                                <div class="bg-white p-6 rounded-xl border-l-4 border-rooted-terra">
+                                    <h4 class="font-bold text-lg mb-2">Mobiliario y Objetos</h4>
+                                    <ul class="space-y-1">
+                                        <li> Muchos muebles tienen valor económico y sentimental</li>
+                                        <li> Te pedimos usarlos con cuidado y responsabilidad</li>
+                                        <li> Cualquier daño debe ser informado inmediatamente</li>
+                                        <li> Los daños no reportados implicarán cargo por reposición completa</li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-white p-6 rounded-xl border-l-4 border-rooted-terra">
+                                    <h4 class="font-bold text-lg mb-2">Servicio de Limpieza</h4>
+                                    <ul class="space-y-1">
+                                        <li> Durante la estadía, limpieza se realiza únicamente al finalizar</li>
+                                        <li> Para estancias >20 días, ofrecemos limpieza gratuita a mitad</li>
+                                        <li> Evita sustancias que generen olores fuertes</li>
+                                        <li> Limpieza profunda adicional por olores tendrá costo extra</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                                <h4 class="font-bold text-lg mb-2 text-yellow-700">?? Consecuencias</h4>
+                                <p class="text-gray-700 mb-2">El incumplimiento de estas reglas puede resultar en:</p>
+                                <ul class="space-y-1 text-gray-700">
+                                    <li> Cargo económico por limpieza, reparación o reposición</li>
+                                    <li> Cancelación anticipada sin reembolso en casos graves</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Política de Mascotas -->
+        <section id="politica-mascotas" class="py-16 bg-rooted-cream">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-rooted-terra/10">
+                        <h2 class="text-3xl font-serif text-rooted-green font-bold mb-6">?? Política de Mascotas</h2>
+                        
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p class="mb-8">
+                                En Casa Normandía podemos recibir a tu amigo de cuatro patas bajo condiciones específicas. 
+                                Para garantizar una estadía agradable y segura para todos, hemos establecido las siguientes políticas:
+                            </p>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">1. Una Mascota por Unidad</h4>
+                                    <p>Solo se permite un perro o gato por reserva para mantener la tranquilidad.</p>
+                                </div>
+
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">2. Correa Obligatoria</h4>
+                                    <p>Los perros deben estar siempre con correa dentro de la propiedad.</p>
+                                </div>
+
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">3. Supervisión Constante</h4>
+                                    <p>Las mascotas no pueden quedarse solas en el estudio ni áreas comunes.</p>
+                                </div>
+
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">4. Sin Muebles</h4>
+                                    <p>Tu mascota no puede subirse a camas, sofás u otros muebles.</p>
+                                </div>
+
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">5. Limpieza Inmediata</h4>
+                                    <p>Los huéspedes deben recoger los desechos de su mascota.</p>
+                                </div>
+
+                                <div class="bg-rooted-cream/50 p-6 rounded-xl">
+                                    <h4 class="font-bold text-lg mb-2 text-rooted-green">6. Paseos Externos</h4>
+                                    <p>Las necesidades deben realizarse fuera de la propiedad.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                                <h4 class="font-bold text-lg mb-2 text-red-700">Prohibición de Animales Exóticos</h4>
+                                <p class="text-gray-700">
+                                    Por razones de seguridad y bienestar, no se permiten animales exóticos como reptiles, serpientes, arañas u otras mascotas no convencionales.
+                                </p>
+                            </div>
+
+                            <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mt-6">
+                                <p class="text-gray-700">
+                                    <strong>Al traer a tu mascota, aceptas seguir estas reglas y asumir la responsabilidad total por su comportamiento durante la estancia.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registro de Huéspedes -->
+        <section id="registro-huespedes" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-rooted-cream/50 rounded-2xl p-8 md:p-12 shadow-sm border border-rooted-terra/10">
+                        <h2 class="text-3xl font-serif text-rooted-green font-bold mb-6">?? Registro de Huéspedes Obligatorio</h2>
+                        
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p class="mb-8">
+                                Como tu llegada se acerca, queremos estar preparados para recibirte y facilitarte el proceso de check-in. 
+                                Por ello, te pedimos que completes el siguiente formulario antes de tu llegada:
+                            </p>
+
+                            <div class="text-center mb-8">
+                                <a href="https://forms.gle/JRicQokLquVgCDU97" target="_blank" rel="noopener" 
+                                   class="inline-block bg-rooted-terra text-white px-8 py-4 rounded-full hover:bg-rooted-green transition-colors shadow-lg text-lg font-bold">
+                                    &#128203; Completar Formulario de Registro
+                                </a>
+                            </div>
+
+                            <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                                <p class="text-gray-700">
+                                    Este paso es <strong>indispensable</strong>, ya que es necesario para autorizar tu ingreso a la propiedad. 
+                                    El Ministerio de Comercio, Industria y Turismo exige diligenciar la 
+                                    <strong>Tarjeta de Registro de Alojamiento (TRA)</strong> como parte de las regulaciones del sector turístico en Colombia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Política de Privacidad -->
+        <section id="privacidad" class="py-16 bg-rooted-cream">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-rooted-terra/10">
+                        <h2 class="text-3xl font-serif text-rooted-green font-bold mb-6">Política de Privacidad</h2>
+                        
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                            <p class="mb-6">
+                                <strong>Protección de Datos Personales (Ley 1581 de 2012):</strong> Casa Normandía y GPMF SAS informan que los datos personales recolectados (Nombre, ID, Contacto) se utilizan exclusivamente para el registro legal de huéspedes ante las autoridades migratorias (SIRE/TRA), la gestión de su reserva y el envío de información sobre nuestros servicios. No compartimos sus datos con terceros con fines comerciales. Para ejercer sus derechos de actualización o supresión, contáctenos al correo de la administración.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-rooted-dark text-rooted-cream py-12 border-t-4 border-rooted-terra">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-4">Casa Normandía</h3>
+                    <p class="text-gray-400 text-sm mb-4">Un ecosistema de hospitalidad gestionado por GPMF. Conectando lo urbano y lo rural.</p>
+                    <div class="flex gap-4 text-xl">
+                        <a href="https://www.instagram.com/casanormandia/" class="hover:text-rooted-terra">Instagram</a>
+                        <a href="https://www.linkedin.com/company/casa-normandia-coliving" class="hover:text-rooted-terra">LinkedIn</a>
+                        <a href="mailto:contacto.gpmfsas@gmail.com" class="hover:text-rooted-terra">Email</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html#bogota" class="hover:text-white transition-colors">Bogotá Studios</a></li>
+                        <li><a href="index.html#nilo" class="hover:text-white transition-colors">Granja Nilo</a></li>
+                        <li><a href="politicas.html" class="hover:text-white transition-colors">Políticas y Reglas de la Casa</a></li>
+                        <li><a href="politicas.html#privacidad" class="hover:text-white transition-colors">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-white">Newsletter</h4>
+                    <p class="text-xs text-gray-400 mb-4">Recibe nuestra "Guía Local de Bogotá" gratis.</p>
+                    <form onsubmit="event.preventDefault(); alert('¡Gracias! Te hemos enviado la guía.');" class="flex gap-2">
+                        <input type="email" placeholder="Tu correo..." class="bg-gray-800 border-none rounded px-4 py-2 text-sm w-full focus:ring-1 focus:ring-rooted-terra">
+                        <button class="bg-rooted-terra px-4 py-2 rounded text-white font-bold hover:bg-white hover:text-rooted-terra transition-colors">?</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Casa Normandía. Operado bajo principios de GPMF.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle (basic functionality)
+        const mobileMenuBtn = document.querySelector('.md\\:hidden');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                // Basic mobile menu functionality could be added here
+                alert('Menú móvil: En desarrollo');
+            });
+        }
+    </script>
+</body>
+</html>

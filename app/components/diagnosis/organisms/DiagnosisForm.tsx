@@ -1,0 +1,204 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import type { DiagnosisDict } from "@/app/dictionaries/diagnosis/types";
+import { RadioOption } from "../atoms/RadioOption";
+import { SelectField } from "../atoms/SelectField";
+import { TextareaField } from "../atoms/TextareaField";
+import { TextInput } from "../atoms/TextInput";
+import styles from "./DiagnosisForm.module.css";
+
+interface DiagnosisFormProps {
+  dict: DiagnosisDict["form"];
+  success: DiagnosisDict["success"];
+}
+
+type Status = "idle" | "submitting" | "success";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgarwdv";
+
+export function DiagnosisForm({ dict, success }: DiagnosisFormProps) {
+  const [status, setStatus] = useState<Status>("idle");
+  const { questions, contact, submit, disclaimer } = dict;
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    setStatus("submitting");
+
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          setStatus("success");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          setStatus("idle");
+          alert("Hubo un error al enviar el formulario. Por favor intenta nuevamente.");
+        }
+      })
+      .catch(() => {
+        setStatus("idle");
+        alert("Error de conexión. Por favor verifica tu internet e intenta nuevamente.");
+      });
+  }
+
+  if (status === "success") {
+    return (
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.card}>
+            <div className={styles.successMessage}>
+              <div className={styles.checkIcon}>
+                <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className={styles.successTitle}>
+                <strong>{success.title}</strong>
+                {success.titleEn && <span className={styles.successTitleEn}>{success.titleEn}</span>}
+              </h3>
+              <p className={styles.successBody}>
+                {success.body}
+                {success.bodyEn && <span className={styles.successBodyEn}>{success.bodyEn}</span>}
+              </p>
+              <Link href="/" className={styles.backLink}>{success.backLink}</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.card}>
+          <form className={styles.form} onSubmit={handleSubmit}>
+
+            {/* Question 1: Challenge */}
+            <div className={styles.questionBlock}>
+              <p className={styles.questionLabel}>
+                <strong className={styles.labelPrimary}>{questions.challenge.label}</strong>
+                <span className={styles.labelSecondary}>{questions.challenge.labelEn}</span>
+              </p>
+              <div className={styles.radioGroup}>
+                {questions.challenge.options.map((opt) => (
+                  <RadioOption
+                    key={opt.value}
+                    name="desafio"
+                    value={opt.value}
+                    label={opt.label}
+                    labelEn={opt.labelEn}
+                    required
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Question 2: Stage */}
+            <div className={styles.questionBlock}>
+              <p className={styles.questionLabel}>
+                <strong className={styles.labelPrimary}>{questions.stage.label}</strong>
+                <span className={styles.labelSecondary}>{questions.stage.labelEn}</span>
+              </p>
+              <SelectField
+                name="etapa"
+                placeholder={questions.stage.placeholder}
+                options={questions.stage.options}
+                required
+              />
+            </div>
+
+            {/* Question 3: Pain */}
+            <div className={styles.questionBlock}>
+              <p className={styles.questionLabel}>
+                <strong className={styles.labelPrimary}>{questions.pain.label}</strong>
+                <span className={styles.labelSecondary}>{questions.pain.labelEn}</span>
+              </p>
+              <TextareaField
+                name="dolor"
+                placeholder={questions.pain.placeholder}
+                rows={3}
+                required
+              />
+            </div>
+
+            {/* Question 4: Urgency */}
+            <div className={styles.questionBlock}>
+              <p className={styles.questionLabel}>
+                <strong className={styles.labelPrimary}>{questions.urgency.label}</strong>
+                <span className={styles.labelSecondary}>{questions.urgency.labelEn}</span>
+              </p>
+              <div className={styles.urgencyGrid}>
+                {questions.urgency.options.map((opt) => (
+                  <RadioOption
+                    key={opt.value}
+                    name="urgencia"
+                    value={opt.value}
+                    label={opt.label}
+                    labelEn={opt.labelEn}
+                    centered
+                    required
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Question 5: Budget */}
+            <div className={`${styles.questionBlock} ${styles.budgetSection}`}>
+              <p className={styles.questionLabel}>
+                <strong className={styles.labelPrimary}>{questions.budget.label}</strong>
+                <span className={styles.labelSecondary}>{questions.budget.labelEn}</span>
+              </p>
+              <p className={styles.budgetNote}>
+                <strong>{questions.budget.note}</strong>
+                <span className={styles.labelSecondary}>{questions.budget.noteEn}</span>
+              </p>
+              <SelectField
+                name="presupuesto"
+                placeholder={questions.budget.placeholder}
+                options={questions.budget.options}
+                required
+              />
+            </div>
+
+            {/* Contact */}
+            <div className={styles.contactSection}>
+              <h3 className={styles.contactTitle}>
+                <strong>{contact.title}</strong>
+                <span className={styles.labelSecondary}>{contact.titleEn}</span>
+              </h3>
+              <div className={styles.contactGrid}>
+                <TextInput name="nombre" placeholder={contact.namePlaceholder} required />
+                <TextInput name="email" type="email" placeholder={contact.emailPlaceholder} required />
+              </div>
+              <TextInput name="empresa" placeholder={contact.companyPlaceholder} required />
+            </div>
+
+            {/* Submit */}
+            <div className={styles.submitBlock}>
+              <button type="submit" className={styles.submitButton} disabled={status === "submitting"}>
+                <strong>{submit.label}</strong>
+                {submit.labelEn && (
+                  <span className={styles.submitLabelEn}>{submit.labelEn}</span>
+                )}
+              </button>
+              <p className={styles.disclaimer}>
+                <strong>{disclaimer.text}</strong>
+                <span className={styles.labelSecondary}>{disclaimer.textEn}</span>
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+}

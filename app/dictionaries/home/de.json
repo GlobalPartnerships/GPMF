@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "eyebrow": "Globale Strategie · Gegr. 2019",
+    "headlinePart1": "Globale\nKomplexität navigieren mit",
+    "headlineAccent": "strategischer Intelligenz",
+    "headlinePart3": "und Präzision.",
+    "description": "GPMF bietet die anspruchsvollen Werkzeuge und Beratung, die Unternehmen benötigen, die Präzision in jedem Markt fordern — und Geduld in jeder Partnerschaft.",
+    "ctaPrimary": "Strategische Pläne",
+    "ctaSecondary": "Kostenlose Diagnose",
+    "stats": [
+      { "value": "10+", "label": "Jahre\nErfahrung" },
+      { "value": "12", "label": "Senior-\nBerater" },
+      { "value": "3", "label": "Globale\nBüros" }
+    ],
+    "regions": ["Nordamerika", "Lateinamerika", "Europa"],
+    "ratingLabel": "Aktive Präsenz in drei Regionen",
+    "verticalCaption": "Ausgabe N°XII — Quartalsbericht"
+  },
+  "trustedBy": {
+    "label": "Vertraut von führenden Unternehmen weltweit",
+    "brands": ["European Commission", "ProColombia", "Business France", "Montreal International", "ICEX", "KOTRA", "Enterprise Ireland"]
+  },
+  "principles": {
+    "eyebrow": "Unsere Praxis",
+    "headline": "Drei Leistungen",
+    "headlineAccent": "die unsere Partner über Grenzen hinweg voranbringen.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Internationalisierung & Strategische Allianzen",
+        "description": "Wir helfen Unternehmen bei Expansion und Soft Landing zwischen Europa und Lateinamerika, bauen solide Allianzen auf und verwandeln kulturelle Reibung in dauerhaften Wettbewerbsvorteil.",
+        "deliverables": ["Markteintritt", "Strategische Allianzen", "Soft Landing"]
+      },
+      {
+        "number": "02",
+        "title": "KI- & Analytics-Beratung",
+        "description": "Wir verwandeln verstreute Daten in strategische Entscheidungen für KMU und NGOs mit hohem Potenzial — von der Reifegrad-Diagnose über die Datenarchitektur bis zur Automatisierung.",
+        "deliverables": ["KI-Strategie", "Datenanalytik", "Automatisierung"]
+      },
+      {
+        "number": "03",
+        "title": "Interkulturelles & Interdisziplinäres Management",
+        "description": "Wir stärken die Fähigkeit Ihres Teams, in globalen Umfeldern zusammenzuarbeiten, zu innovieren und zu führen, und machen kulturelle und technische Vielfalt zu Ihrem größten Vorteil.",
+        "deliverables": ["Team-Training", "Führung", "Kultur"]
+      }
+    ]
+  },
+  "methodology": {
+    "eyebrow": "Methodik",
+    "headline": "Unsere",
+    "headlineAccent": "Spezialität.",
+    "description": "Vier gezielte Schritte, mit denen wir unseren Partnern helfen, ihre Zielmärkte zu verstehen, zu erschließen und zu gewinnen — von der ersten Bewertung bis zur messbaren Lieferung.",
+    "steps": [
+      { "number": "01", "title": "Bewerten", "description": "Tiefgehende Analyse Ihrer aktuellen Position, Marktlandschaft und Wettbewerbsumgebung." },
+      { "number": "02", "title": "Strategisieren", "description": "Hochpräzise Analysetools einsetzen, um Chancen, Risiken und Partnerschaftswege zu kartieren." },
+      { "number": "03", "title": "Umsetzen", "description": "Unser Netzwerk lokaler Partner und kultureller Brücken einsetzen, um Märkte zu öffnen." },
+      { "number": "04", "title": "Liefern", "description": "Messbare Ergebnisse und nachhaltige Marktpräsenz für dauerhaftes Wachstum generieren." }
+    ],
+    "quote": {
+      "text": "GPMF ist die seltene Firma, die Ihr Unternehmen als lebendigen Organismus respektiert — nicht als Tabellenkalkulation. Nach fünfzehn Jahren im internationalen Handel habe ich nicht die Partner gewechselt. Ich habe die Perspektive gewechselt.",
+      "author": "— H. Marlowe, Direktor, ProColombia"
+    }
+  },
+  "caseStudies": {
+    "eyebrow": "Ausgewählte Arbeiten",
+    "headline": "Erfolgsgeschichten.",
+    "cases": [
+      {
+        "number": "N° 01",
+        "category": "Markteintritt · 2023",
+        "title": "Casa Normandia",
+        "description": "Eine Erkundung von Markteintritt und kultureller Brückenbildung zwischen Kolumbien und Frankreich, über neun Monate strategischer Zusammenarbeit.",
+        "cta": "Projekt erkunden",
+        "link": "https://globalpartnerships.github.io/GPMF-WEBSITE/casa-normandia/index.html"
+      },
+      {
+        "number": "N° 02",
+        "category": "Gesundheit · 2024",
+        "title": "Health Care Hospital",
+        "description": "Neugestaltung internationaler Gesundheitskommunikation durch eine minimalistische strategische Sprache und ein rigoroses operatives Raster.",
+        "cta": "Projekt erkunden",
+        "link": ""
+      },
+      {
+        "number": "N° 03",
+        "category": "Strategie · 2023",
+        "title": "The Art of Precision",
+        "description": "Ein Manifest über strategische Beratung im Zeitalter der digitalen Transformation — als begrenztes Engagement über 3 Märkte umgesetzt.",
+        "cta": "Projekt erkunden",
+        "link": ""
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Das Studio",
+    "headlinePart1": "Lernen Sie das",
+    "headlineAccent": "GPMF-Team kennen.",
+    "description": "Unsere Spezialisten vereinen Jahrzehnte kollektiver Weisheit im internationalen Geschäft — Strategen, Analysten, kulturelle Mediatoren und ehemalige Handelsbeamte unter einem Dach.",
+    "members": [
+      { "name": "Marcela Sánchez Vargas", "role": "Gründungsdirektorin · Strategischer Betrieb" },
+      { "name": "Adriana Sánchez Halleux", "role": "AgTech & Innovationsstrategie" },
+      { "name": "Natalia Sánchez", "role": "Geschäftsentwicklung & Strategie" },
+      { "name": "Matthias Halleux", "role": "Marktzugangsberater · Frankreich" }
+    ],
+    "cta": "Unser Team kennenlernen",
+    "studioLocation": "Studio · Bogotá, CO"
+  },
+  "legacy": {
+    "eyebrow": "Beginnen",
+    "headline": "Werden Sie Teil des",
+    "headlineAccent": "Vermächtnisses.",
+    "description": "Treten Sie in eine Partnerschaft ein, in der Ihre Vision mit der Ehrfurcht behandelt wird, die sie verdient. Schließen Sie sich einem exklusiven Kreis von Unternehmen an, die Ambition in dauerhafte internationale Präsenz verwandeln.",
+    "ctaPlaceholder": "ihre@email.com",
+    "ctaButton": "Loslegen",
+    "note": "Einladungen vierteljährlich offen · Derzeit Frühjahrseinreichungen akzeptiert",
+    "triptych": [
+      { "label": "N° 01", "title": "Vergangenheit", "subtitle": "Erbe" },
+      { "label": "N° 02", "title": "Gegenwart", "subtitle": "Praxis" },
+      { "label": "N° 03", "title": "Zukunft", "subtitle": "Vermächtnis" }
+    ]
+  }
+}
