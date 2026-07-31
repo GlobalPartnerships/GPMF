@@ -98,9 +98,7 @@
     "description": "Nuestros especialistas reúnen décadas de sabiduría colectiva en negocios internacionales — estrategas, analistas, mediadores culturales y ex funcionarios comerciales trabajando bajo un mismo techo.",
     "members": [
       { "name": "Marcela Sánchez Vargas", "role": "Directora Fundadora · Operaciones Estratégicas" },
-      { "name": "Adriana Sánchez Halleux", "role": "AgTech y Estrategia de Innovación" },
-      { "name": "Natalia Sánchez", "role": "Desarrollo de Negocios y Estrategia" },
-      { "name": "Matthias Halleux", "role": "Asesor de Acceso a Mercado · Francia" }
+      { "name": "Adriana Sánchez Halleux", "role": "AgTech y Estrategia de Innovación" }
     ],
     "cta": "Conoce a nuestro equipo",
     "studioLocation": "Estudio · Bogotá, CO"

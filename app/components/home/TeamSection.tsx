@@ -11,15 +11,24 @@ export function TeamSection({ dict, lang }: TeamSectionProps) {
     <section id="team" className="bg-white py-32 lg:py-40 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-          <div className="relative w-full min-h-[560px] lg:min-h-[820px]">
+          <div className="relative w-full min-h-[560px] lg:min-h-[820px] grid grid-cols-2">
+            <div className="relative w-full h-full p-4 lg:p-12">
+              <Image
+                alt="Marce"
+                className="w-full h-full object-cover rounded-xl shadow-sm"
+                src="/marceperfil.jpg"
+                width={360}
+                height={820}
+              />
+            </div>
             <Image
-              alt="Meet the GPMF team"
+              alt="Adriana"
               className="w-full h-full object-cover"
-              src="/team.jpg"
-              width={720}
+              src="/workshop_adr.jpg"
+              width={360}
               height={820}
             />
-            <div className="absolute bottom-8 left-8 text-white text-[10px] tracking-[0.32em] uppercase opacity-90">
+            <div className="absolute bottom-8 left-8 text-white text-[10px] tracking-[0.32em] uppercase opacity-90 drop-shadow-md">
               {dict.studioLocation}
             </div>
           </div>
