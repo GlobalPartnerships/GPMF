@@ -26,6 +26,14 @@ export interface PlansDict {
     standard: string;
     custom: string;
   };
+  diagnosisCta: {
+    eyebrow: string;
+    headline: string;
+    headlineAccent: string;
+    body: string;
+    ctaLabel: string;
+    footnote: string;
+  };
   plans: PlanCardData[];
   meta: {
     title: string;
