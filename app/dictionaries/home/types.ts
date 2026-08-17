@@ -17,6 +17,7 @@ export interface HomeDict {
     };
     trustedBy: {
         label: string;
+        description?: string;
         brands: string[];
     };
     principles: {
