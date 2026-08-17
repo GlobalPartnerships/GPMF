@@ -24,7 +24,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${playfair.variable} ${fell.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground font-sans antialiased">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-background text-foreground font-sans antialiased">
         {children}
         <Toaster position="bottom-center" duration={10000} richColors />
       </body>

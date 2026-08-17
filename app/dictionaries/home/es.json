@@ -17,8 +17,9 @@
     "verticalCaption": "Edición N°XII — Boletín Trimestral"
   },
   "trustedBy": {
-    "label": "Con la confianza de empresas líderes a nivel mundial",
-    "brands": ["European Commission", "ProColombia", "Business France", "Montreal International", "ICEX", "KOTRA", "Enterprise Ireland"]
+    "label": "Nuestra Experiencia",
+    "description": "Rigor técnico, operativo y financiero avalado por organizaciones globales de primer nivel.",
+    "brands": ["Colciencias", "INRAE (Fr)", "CEMarin", "AgriFoodTEF", "DAAD (DE)", "Universidad Nacional de Colombia"]
   },
   "principles": {
     "eyebrow": "Nuestra Práctica",
@@ -71,7 +72,7 @@
         "title": "Casa Normandia",
         "description": "Una exploración de entrada al mercado y puente cultural entre Colombia y Francia, ejecutada a lo largo de nueve meses de colaboración estratégica.",
         "cta": "Explorar proyecto",
-        "link": "https://globalpartnerships.github.io/GPMF-WEBSITE/casa-normandia/index.html"
+        "link": "https://globalpartnerships.github.io/casa-normandia/index.html"
       },
       {
         "number": "N° 02",

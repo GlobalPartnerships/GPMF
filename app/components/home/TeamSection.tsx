@@ -11,29 +11,43 @@ export function TeamSection({ dict, lang }: TeamSectionProps) {
     <section id="team" className="bg-white py-32 lg:py-40 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-          <div className="relative w-full min-h-[560px] lg:min-h-[820px] grid grid-cols-2">
+          <div className="relative w-full min-h-[400px] lg:min-h-[600px] grid grid-cols-2">
             <div className="relative w-full h-full p-4 lg:p-12">
+              <a
+                href="https://www.linkedin.com/in/marcelasanchezintercultural/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full transition-opacity hover:opacity-80"
+              >
+                <Image
+                  alt="Marce"
+                  className="w-full h-full object-cover rounded-xl shadow-sm"
+                  src="/marceperfil.jpg"
+                  width={360}
+                  height={820}
+                />
+              </a>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/adrianasancheztechforesight/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full transition-opacity hover:opacity-80"
+            >
               <Image
-                alt="Marce"
-                className="w-full h-full object-cover rounded-xl shadow-sm"
-                src="/marceperfil.jpg"
+                alt="Adriana"
+                className="w-full h-full object-cover"
+                src="/workshop_adr.jpg"
                 width={360}
                 height={820}
               />
-            </div>
-            <Image
-              alt="Adriana"
-              className="w-full h-full object-cover"
-              src="/workshop_adr.jpg"
-              width={360}
-              height={820}
-            />
-            <div className="absolute bottom-8 left-8 text-white text-[10px] tracking-[0.32em] uppercase opacity-90 drop-shadow-md">
+            </a>
+            <div className="absolute bottom-8 left-8 text-white text-[10px] tracking-[0.32em] uppercase opacity-90 drop-shadow-md pointer-events-none">
               {dict.studioLocation}
             </div>
           </div>
 
-          <div className="px-5 sm:px-8 lg:px-24 py-20 lg:py-0 flex flex-col justify-center items-center min-h-[560px] lg:min-h-[820px]">
+          <div className="px-5 sm:px-8 lg:px-24 py-20 lg:py-0 flex flex-col justify-center items-center min-h-[400px] lg:min-h-[600px]">
             <div className="max-w-xl min-w-0 w-full">
               <span className="tick text-[11px] tracking-[0.28em] uppercase text-burgundy font-semibold">
                 {dict.eyebrow}
