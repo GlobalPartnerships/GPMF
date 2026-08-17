@@ -10,10 +10,15 @@ export function TrustedByMarquee({ dict }: TrustedByMarqueeProps) {
 
   return (
     <section className="py-12 border-y border-foreground/5 bg-paper/40 overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-8 mb-6">
-        <p className="text-[10px] tracking-[0.32em] uppercase text-surface-variant">
+      <div className="max-w-[1280px] mx-auto px-8 mb-8">
+        <p className="text-[10px] tracking-[0.32em] uppercase text-surface-variant mb-2">
           {dict.label}
         </p>
+        {dict.description && (
+          <p className="text-[14px] sm:text-[16px] text-surface-variant/90 max-w-2xl">
+            {dict.description}
+          </p>
+        )}
       </div>
       <div className="overflow-hidden">
         <div className={`${styles.track} flex gap-20 whitespace-nowrap font-serif italic text-2xl text-foreground/40`}>

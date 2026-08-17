@@ -17,8 +17,9 @@
     "verticalCaption": "Issue N°XII — Spring Quarterly"
   },
   "trustedBy": {
-    "label": "As trusted by leading enterprises worldwide",
-    "brands": ["European Commission", "ProColombia", "Business France", "Montreal International", "ICEX", "KOTRA", "Enterprise Ireland"]
+    "label": "Our Experience",
+    "description": "Technical, operational, and financial rigor endorsed by top-tier global organizations.",
+    "brands": ["Colciencias", "INRAE (Fr)", "CEMarin", "AgriFoodTEF", "DAAD (DE)", "Universidad Nacional de Colombia"]
   },
   "principles": {
     "eyebrow": "Our Practice",
@@ -71,7 +72,7 @@
         "title": "Casa Normandia",
         "description": "An exploration of market entry and cultural bridging between Colombia and France, executed across nine months of strategic collaboration.",
         "cta": "Explore project",
-        "link": "https://globalpartnerships.github.io/GPMF-WEBSITE/casa-normandia/index.html"
+        "link": "https://globalpartnerships.github.io/casa-normandia/index.html"
       },
       {
         "number": "N° 02",
