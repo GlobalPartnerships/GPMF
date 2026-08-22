@@ -1,16 +1,13 @@
 {
-  "id": "scale-up-accelerator",
-  "category": "custom",
-  "name": "Accélérateur d'Expansion",
-  "subtitle": "Pour les organisations entrant sur de nouveaux marchés internationaux",
-  "price": "Sur Mesure",
-  "priceNote": "À partir de 5 000 – 10 000 $ USD",
+  "id": "tactical-retainer",
+  "category": "standard",
+  "name": "TACTICAL RETAINER",
+  "subtitle": "Continuous operational support with dedicated management",
+  "price": "$2,500",
+  "priceNote": "USD / Monthly",
   "features": [
-    "Étude de faisabilité de marché",
-    "Cartographie du paysage réglementaire",
-    "Identification et évaluation de partenaires",
-    "Conception de stratégie go-to-market",
-    "Activation du réseau local",
-    "Accompagnement à l'implémentation sur 90 jours"
+    "Management of 1 specific process (partner search, data cleanup, etc.)",
+    "Bi-weekly follow-up meetings",
+    "Monthly progress reports"
   ]
 }
