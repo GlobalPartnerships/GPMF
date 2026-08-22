@@ -8,18 +8,38 @@
     "ctaPrimary": "Strategic Plans",
     "ctaSecondary": "Free Diagnosis",
     "stats": [
-      { "value": "10+", "label": "Years of\nexperience" },
-      { "value": "12", "label": "Senior\nconsultants" },
-      { "value": "3", "label": "Global\noffices" }
+      {
+        "value": "10+",
+        "label": "Years of\nexperience"
+      },
+      {
+        "value": "12",
+        "label": "Senior\nconsultants"
+      },
+      {
+        "value": "3",
+        "label": "Global\noffices"
+      }
     ],
-    "regions": ["North America", "Latin America", "Europe"],
+    "regions": [
+      "North America",
+      "Latin America",
+      "Europe"
+    ],
     "ratingLabel": "Live operations across three regions",
     "verticalCaption": "Issue N°XII — Spring Quarterly"
   },
   "trustedBy": {
     "label": "Our Experience",
     "description": "Technical, operational, and financial rigor endorsed by top-tier global organizations.",
-    "brands": ["Colciencias", "INRAE (Fr)", "CEMarin", "AgriFoodTEF", "DAAD (DE)", "Universidad Nacional de Colombia"]
+    "brands": [
+      "Colciencias",
+      "INRAE (Fr)",
+      "CEMarin",
+      "AgriFoodTEF",
+      "DAAD (DE)",
+      "Universidad Nacional de Colombia"
+    ]
   },
   "principles": {
     "eyebrow": "Our Practice",
@@ -30,19 +50,31 @@
         "number": "01",
         "title": "Internationalization & Strategic Alliances",
         "description": "We help businesses expand and soft-land between Europe and Latin America, building solid alliances and turning cultural friction into lasting competitive advantage.",
-        "deliverables": ["Market entry", "Strategic alliances", "Soft landing"]
+        "deliverables": [
+          "Market entry",
+          "Strategic alliances",
+          "Soft landing"
+        ]
       },
       {
         "number": "02",
         "title": "AI & Analytics Consulting",
         "description": "We turn scattered data into strategic decisions for high-potential SMEs and NGOs — from maturity diagnosis to data architecture and automation.",
-        "deliverables": ["AI strategy", "Data analytics", "Automation"]
+        "deliverables": [
+          "AI strategy",
+          "Data analytics",
+          "Automation"
+        ]
       },
       {
         "number": "03",
         "title": "Intercultural & Interdisciplinary Management",
         "description": "We strengthen your team's ability to collaborate, innovate and lead in global environments, turning cultural and technical diversity into your greatest asset.",
-        "deliverables": ["Team training", "Leadership", "Culture"]
+        "deliverables": [
+          "Team training",
+          "Leadership",
+          "Culture"
+        ]
       }
     ]
   },
@@ -52,10 +84,26 @@
     "headlineAccent": "specialty.",
     "description": "Four deliberate steps we take to help our partners read, enter and win their target markets — from first assessment to measurable delivery.",
     "steps": [
-      { "number": "01", "title": "Assess", "description": "Deep-dive into your current position, market landscape, and competitive environment." },
-      { "number": "02", "title": "Strategize", "description": "Apply high-fidelity analytical tools to map opportunities, risks, and partnership pathways." },
-      { "number": "03", "title": "Execute", "description": "Deploy our network of on-the-ground partners and cultural bridges to open markets." },
-      { "number": "04", "title": "Deliver", "description": "Generate measurable outcomes and sustainable market presence for lasting growth." }
+      {
+        "number": "01",
+        "title": "Assess",
+        "description": "Deep-dive into your current position, market landscape, and competitive environment."
+      },
+      {
+        "number": "02",
+        "title": "Strategize",
+        "description": "Apply high-fidelity analytical tools to map opportunities, risks, and partnership pathways."
+      },
+      {
+        "number": "03",
+        "title": "Execute",
+        "description": "Deploy our network of on-the-ground partners and cultural bridges to open markets."
+      },
+      {
+        "number": "04",
+        "title": "Deliver",
+        "description": "Generate measurable outcomes and sustainable market presence for lasting growth."
+      }
     ],
     "quote": {
       "text": "GPMF is the rare firm that respects your business as a living organism — not a spreadsheet. After fifteen years in international trade, I have not changed partners. I have changed perspective.",
@@ -92,18 +140,6 @@
       }
     ]
   },
-  "team": {
-    "eyebrow": "The Studio",
-    "headlinePart1": "Meet the",
-    "headlineAccent": "GPMF team.",
-    "description": "Our specialists bring together decades of collective wisdom in international business — strategists, analysts, cultural mediators and former trade officials working under one careful roof.",
-    "members": [
-      { "name": "Marcela Sánchez Vargas", "role": "Founding Director · Strategic Operations" },
-      { "name": "Adriana Sánchez Halleux", "role": "AgTech & Innovation Strategy" }
-    ],
-    "cta": "Meet our team",
-    "studioLocation": "Studio · Bogotá, CO"
-  },
   "legacy": {
     "eyebrow": "Begin",
     "headline": "Join the",
@@ -113,9 +149,21 @@
     "ctaButton": "Get started",
     "note": "Invitations open quarterly · Currently accepting Spring submissions",
     "triptych": [
-      { "label": "N° 01", "title": "Past", "subtitle": "Heritage" },
-      { "label": "N° 02", "title": "Present", "subtitle": "Practice" },
-      { "label": "N° 03", "title": "Future", "subtitle": "Legacy" }
+      {
+        "label": "N° 01",
+        "title": "Past",
+        "subtitle": "Heritage"
+      },
+      {
+        "label": "N° 02",
+        "title": "Present",
+        "subtitle": "Practice"
+      },
+      {
+        "label": "N° 03",
+        "title": "Future",
+        "subtitle": "Legacy"
+      }
     ]
   }
 }

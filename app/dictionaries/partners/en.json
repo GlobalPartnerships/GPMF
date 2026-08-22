@@ -113,6 +113,24 @@
       }
     ]
   },
+  "team": {
+    "eyebrow": "The Studio",
+    "headlinePart1": "Meet the",
+    "headlineAccent": "GPMF team.",
+    "description": "Our specialists bring together decades of collective wisdom in international business — strategists, analysts, cultural mediators and former trade officials working under one careful roof.",
+    "members": [
+      {
+        "name": "Marcela Sánchez Vargas",
+        "role": "Founding Director · Strategic Operations"
+      },
+      {
+        "name": "Adriana Sánchez Halleux",
+        "role": "AgTech & Innovation Strategy"
+      }
+    ],
+    "cta": "Meet our team",
+    "studioLocation": "Studio · Bogotá, CO"
+  },
   "cta": {
     "eyebrow": "Extended Collaboration",
     "title": "A living network for high-risk, high-impact projects.",

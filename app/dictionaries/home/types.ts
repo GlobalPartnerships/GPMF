@@ -58,18 +58,6 @@ export interface HomeDict {
             link: string;
         }[];
     };
-    team: {
-        eyebrow: string;
-        headlinePart1: string;
-        headlineAccent: string;
-        description: string;
-        members: {
-            name: string;
-            role: string;
-        }[];
-        cta: string;
-        studioLocation: string;
-    };
     legacy: {
         eyebrow: string;
         headline: string;

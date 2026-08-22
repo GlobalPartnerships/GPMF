@@ -1,8 +1,8 @@
 import Image from "next/image";
-import type { HomeDict } from "@/app/dictionaries";
+import type { PartnersDict } from "@/app/dictionaries";
 
 interface TeamSectionProps {
-  dict: HomeDict["team"];
+  dict: PartnersDict["team"];
   lang: string;
 }
 

@@ -8,18 +8,38 @@
     "ctaPrimary": "Strategische Pläne",
     "ctaSecondary": "Kostenlose Diagnose",
     "stats": [
-      { "value": "10+", "label": "Jahre\nErfahrung" },
-      { "value": "12", "label": "Senior-\nBerater" },
-      { "value": "3", "label": "Globale\nBüros" }
+      {
+        "value": "10+",
+        "label": "Jahre\nErfahrung"
+      },
+      {
+        "value": "12",
+        "label": "Senior-\nBerater"
+      },
+      {
+        "value": "3",
+        "label": "Globale\nBüros"
+      }
     ],
-    "regions": ["Nordamerika", "Lateinamerika", "Europa"],
+    "regions": [
+      "Nordamerika",
+      "Lateinamerika",
+      "Europa"
+    ],
     "ratingLabel": "Aktive Präsenz in drei Regionen",
     "verticalCaption": "Ausgabe N°XII — Quartalsbericht"
   },
   "trustedBy": {
     "label": "Unsere Erfahrung",
     "description": "Technische, operative und finanzielle Strenge, unterstützt von weltweit führenden Organisationen.",
-    "brands": ["Colciencias", "INRAE (Fr)", "CEMarin", "AgriFoodTEF", "DAAD (DE)", "Universidad Nacional de Colombia"]
+    "brands": [
+      "Colciencias",
+      "INRAE (Fr)",
+      "CEMarin",
+      "AgriFoodTEF",
+      "DAAD (DE)",
+      "Universidad Nacional de Colombia"
+    ]
   },
   "principles": {
     "eyebrow": "Unsere Praxis",
@@ -30,19 +50,31 @@
         "number": "01",
         "title": "Internationalisierung & Strategische Allianzen",
         "description": "Wir helfen Unternehmen bei Expansion und Soft Landing zwischen Europa und Lateinamerika, bauen solide Allianzen auf und verwandeln kulturelle Reibung in dauerhaften Wettbewerbsvorteil.",
-        "deliverables": ["Markteintritt", "Strategische Allianzen", "Soft Landing"]
+        "deliverables": [
+          "Markteintritt",
+          "Strategische Allianzen",
+          "Soft Landing"
+        ]
       },
       {
         "number": "02",
         "title": "KI- & Analytics-Beratung",
         "description": "Wir verwandeln verstreute Daten in strategische Entscheidungen für KMU und NGOs mit hohem Potenzial — von der Reifegrad-Diagnose über die Datenarchitektur bis zur Automatisierung.",
-        "deliverables": ["KI-Strategie", "Datenanalytik", "Automatisierung"]
+        "deliverables": [
+          "KI-Strategie",
+          "Datenanalytik",
+          "Automatisierung"
+        ]
       },
       {
         "number": "03",
         "title": "Interkulturelles & Interdisziplinäres Management",
         "description": "Wir stärken die Fähigkeit Ihres Teams, in globalen Umfeldern zusammenzuarbeiten, zu innovieren und zu führen, und machen kulturelle und technische Vielfalt zu Ihrem größten Vorteil.",
-        "deliverables": ["Team-Training", "Führung", "Kultur"]
+        "deliverables": [
+          "Team-Training",
+          "Führung",
+          "Kultur"
+        ]
       }
     ]
   },
@@ -52,10 +84,26 @@
     "headlineAccent": "Spezialität.",
     "description": "Vier gezielte Schritte, mit denen wir unseren Partnern helfen, ihre Zielmärkte zu verstehen, zu erschließen und zu gewinnen — von der ersten Bewertung bis zur messbaren Lieferung.",
     "steps": [
-      { "number": "01", "title": "Bewerten", "description": "Tiefgehende Analyse Ihrer aktuellen Position, Marktlandschaft und Wettbewerbsumgebung." },
-      { "number": "02", "title": "Strategisieren", "description": "Hochpräzise Analysetools einsetzen, um Chancen, Risiken und Partnerschaftswege zu kartieren." },
-      { "number": "03", "title": "Umsetzen", "description": "Unser Netzwerk lokaler Partner und kultureller Brücken einsetzen, um Märkte zu öffnen." },
-      { "number": "04", "title": "Liefern", "description": "Messbare Ergebnisse und nachhaltige Marktpräsenz für dauerhaftes Wachstum generieren." }
+      {
+        "number": "01",
+        "title": "Bewerten",
+        "description": "Tiefgehende Analyse Ihrer aktuellen Position, Marktlandschaft und Wettbewerbsumgebung."
+      },
+      {
+        "number": "02",
+        "title": "Strategisieren",
+        "description": "Hochpräzise Analysetools einsetzen, um Chancen, Risiken und Partnerschaftswege zu kartieren."
+      },
+      {
+        "number": "03",
+        "title": "Umsetzen",
+        "description": "Unser Netzwerk lokaler Partner und kultureller Brücken einsetzen, um Märkte zu öffnen."
+      },
+      {
+        "number": "04",
+        "title": "Liefern",
+        "description": "Messbare Ergebnisse und nachhaltige Marktpräsenz für dauerhaftes Wachstum generieren."
+      }
     ],
     "quote": {
       "text": "GPMF ist die seltene Firma, die Ihr Unternehmen als lebendigen Organismus respektiert — nicht als Tabellenkalkulation. Nach fünfzehn Jahren im internationalen Handel habe ich nicht die Partner gewechselt. Ich habe die Perspektive gewechselt.",
@@ -92,18 +140,6 @@
       }
     ]
   },
-  "team": {
-    "eyebrow": "Das Studio",
-    "headlinePart1": "Lernen Sie das",
-    "headlineAccent": "GPMF-Team kennen.",
-    "description": "Unsere Spezialisten vereinen Jahrzehnte kollektiver Weisheit im internationalen Geschäft — Strategen, Analysten, kulturelle Mediatoren und ehemalige Handelsbeamte unter einem Dach.",
-    "members": [
-      { "name": "Marcela Sánchez Vargas", "role": "Gründungsdirektorin · Strategischer Betrieb" },
-      { "name": "Adriana Sánchez Halleux", "role": "AgTech & Innovationsstrategie" }
-    ],
-    "cta": "Unser Team kennenlernen",
-    "studioLocation": "Studio · Bogotá, CO"
-  },
   "legacy": {
     "eyebrow": "Beginnen",
     "headline": "Werden Sie Teil des",
@@ -113,9 +149,21 @@
     "ctaButton": "Loslegen",
     "note": "Einladungen vierteljährlich offen · Derzeit Frühjahrseinreichungen akzeptiert",
     "triptych": [
-      { "label": "N° 01", "title": "Vergangenheit", "subtitle": "Erbe" },
-      { "label": "N° 02", "title": "Gegenwart", "subtitle": "Praxis" },
-      { "label": "N° 03", "title": "Zukunft", "subtitle": "Vermächtnis" }
+      {
+        "label": "N° 01",
+        "title": "Vergangenheit",
+        "subtitle": "Erbe"
+      },
+      {
+        "label": "N° 02",
+        "title": "Gegenwart",
+        "subtitle": "Praxis"
+      },
+      {
+        "label": "N° 03",
+        "title": "Zukunft",
+        "subtitle": "Vermächtnis"
+      }
     ]
   }
 }

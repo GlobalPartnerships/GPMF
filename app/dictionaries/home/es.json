@@ -8,18 +8,38 @@
     "ctaPrimary": "Planes Estratégicos",
     "ctaSecondary": "Diagnóstico Gratuito",
     "stats": [
-      { "value": "10+", "label": "Años de\nexperiencia" },
-      { "value": "12", "label": "Consultores\nsenior" },
-      { "value": "3", "label": "Oficinas\nglobales" }
+      {
+        "value": "10+",
+        "label": "Años de\nexperiencia"
+      },
+      {
+        "value": "12",
+        "label": "Consultores\nsenior"
+      },
+      {
+        "value": "3",
+        "label": "Oficinas\nglobales"
+      }
     ],
-    "regions": ["Norteamérica", "Latinoamérica", "Europa"],
+    "regions": [
+      "Norteamérica",
+      "Latinoamérica",
+      "Europa"
+    ],
     "ratingLabel": "Operaciones activas en tres regiones",
     "verticalCaption": "Edición N°XII — Boletín Trimestral"
   },
   "trustedBy": {
     "label": "Nuestra Experiencia",
     "description": "Rigor técnico, operativo y financiero avalado por organizaciones globales de primer nivel.",
-    "brands": ["Colciencias", "INRAE (Fr)", "CEMarin", "AgriFoodTEF", "DAAD (DE)", "Universidad Nacional de Colombia"]
+    "brands": [
+      "Colciencias",
+      "INRAE (Fr)",
+      "CEMarin",
+      "AgriFoodTEF",
+      "DAAD (DE)",
+      "Universidad Nacional de Colombia"
+    ]
   },
   "principles": {
     "eyebrow": "Nuestra Práctica",
@@ -30,19 +50,31 @@
         "number": "01",
         "title": "Internacionalización y Alianzas Estratégicas",
         "description": "Ayudamos a las empresas a expandirse y aterrizar (soft landing) entre Europa y América Latina, construyendo alianzas sólidas y convirtiendo la fricción cultural en una ventaja competitiva duradera.",
-        "deliverables": ["Entrada al mercado", "Alianzas estratégicas", "Soft landing"]
+        "deliverables": [
+          "Entrada al mercado",
+          "Alianzas estratégicas",
+          "Soft landing"
+        ]
       },
       {
         "number": "02",
         "title": "Consultoría en IA y Analítica",
         "description": "Transformamos datos dispersos en decisiones estratégicas para pymes y ONG de alto potencial — del diagnóstico de madurez a la arquitectura de datos y la automatización.",
-        "deliverables": ["Estrategia de IA", "Analítica de datos", "Automatización"]
+        "deliverables": [
+          "Estrategia de IA",
+          "Analítica de datos",
+          "Automatización"
+        ]
       },
       {
         "number": "03",
         "title": "Gestión Intercultural e Interdisciplinaria",
         "description": "Fortalecemos la capacidad de su equipo para colaborar, innovar y liderar en entornos globales, convirtiendo la diversidad cultural y técnica en su mayor ventaja.",
-        "deliverables": ["Formación de equipos", "Liderazgo", "Cultura"]
+        "deliverables": [
+          "Formación de equipos",
+          "Liderazgo",
+          "Cultura"
+        ]
       }
     ]
   },
@@ -52,10 +84,26 @@
     "headlineAccent": "especialidad.",
     "description": "Cuatro pasos deliberados que damos para ayudar a nuestros socios a leer, entrar y conquistar sus mercados objetivo — desde la evaluación inicial hasta una entrega medible.",
     "steps": [
-      { "number": "01", "title": "Evaluar", "description": "Inmersión profunda en tu posición actual, panorama de mercado y entorno competitivo." },
-      { "number": "02", "title": "Estrategizar", "description": "Aplicamos herramientas analíticas de alta fidelidad para mapear oportunidades, riesgos y rutas de alianza." },
-      { "number": "03", "title": "Ejecutar", "description": "Desplegamos nuestra red de socios locales y puentes culturales para abrir mercados." },
-      { "number": "04", "title": "Entregar", "description": "Generamos resultados medibles y presencia sostenible en el mercado para un crecimiento duradero." }
+      {
+        "number": "01",
+        "title": "Evaluar",
+        "description": "Inmersión profunda en tu posición actual, panorama de mercado y entorno competitivo."
+      },
+      {
+        "number": "02",
+        "title": "Estrategizar",
+        "description": "Aplicamos herramientas analíticas de alta fidelidad para mapear oportunidades, riesgos y rutas de alianza."
+      },
+      {
+        "number": "03",
+        "title": "Ejecutar",
+        "description": "Desplegamos nuestra red de socios locales y puentes culturales para abrir mercados."
+      },
+      {
+        "number": "04",
+        "title": "Entregar",
+        "description": "Generamos resultados medibles y presencia sostenible en el mercado para un crecimiento duradero."
+      }
     ],
     "quote": {
       "text": "GPMF es la firma poco común que respeta tu negocio como un organismo vivo — no como una hoja de cálculo. Después de quince años en comercio internacional, no cambié de socios. Cambié de perspectiva.",
@@ -92,18 +140,6 @@
       }
     ]
   },
-  "team": {
-    "eyebrow": "El Estudio",
-    "headlinePart1": "Conoce al",
-    "headlineAccent": "equipo GPMF.",
-    "description": "Nuestros especialistas reúnen décadas de sabiduría colectiva en negocios internacionales — estrategas, analistas, mediadores culturales y ex funcionarios comerciales trabajando bajo un mismo techo.",
-    "members": [
-      { "name": "Marcela Sánchez Vargas", "role": "Directora Fundadora · Operaciones Estratégicas" },
-      { "name": "Adriana Sánchez Halleux", "role": "AgTech y Estrategia de Innovación" }
-    ],
-    "cta": "Conoce a nuestro equipo",
-    "studioLocation": "Estudio · Bogotá, CO"
-  },
   "legacy": {
     "eyebrow": "Comenzar",
     "headline": "Únete al",
@@ -113,9 +149,21 @@
     "ctaButton": "Comenzar",
     "note": "Invitaciones abiertas trimestralmente · Actualmente aceptando solicitudes de primavera",
     "triptych": [
-      { "label": "N° 01", "title": "Pasado", "subtitle": "Herencia" },
-      { "label": "N° 02", "title": "Presente", "subtitle": "Práctica" },
-      { "label": "N° 03", "title": "Futuro", "subtitle": "Legado" }
+      {
+        "label": "N° 01",
+        "title": "Pasado",
+        "subtitle": "Herencia"
+      },
+      {
+        "label": "N° 02",
+        "title": "Presente",
+        "subtitle": "Práctica"
+      },
+      {
+        "label": "N° 03",
+        "title": "Futuro",
+        "subtitle": "Legado"
+      }
     ]
   }
 }
