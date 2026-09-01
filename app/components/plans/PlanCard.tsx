@@ -18,7 +18,7 @@ export function PlanCard({ plan, cta, href }: PlanCardProps) {
       <p className="text-[14px] text-surface-variant mb-6">{plan.subtitle}</p>
 
       <div className="mb-2">
-        <span className="font-serif text-4xl font-bold">{plan.price}</span>
+        <span className="font-serif text-4xl font-bold [font-variant-numeric:lining-nums]">{plan.price}</span>
       </div>
       <p className="text-[13px] text-surface-variant mb-8">{plan.priceNote}</p>
 

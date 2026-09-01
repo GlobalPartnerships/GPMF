@@ -5,7 +5,6 @@ import { TrustedByMarquee } from "@/app/components/home/TrustedByMarquee";
 import { PrinciplesSection } from "@/app/components/home/PrinciplesSection";
 import { MethodologySection } from "@/app/components/home/MethodologySection";
 import { CaseStudiesSection } from "@/app/components/home/CaseStudiesSection";
-import { TeamSection } from "@/app/components/home/TeamSection";
 import { LegacyCtaSection } from "@/app/components/home/LegacyCtaSection";
 import { RevealObserver } from "@/app/components/home/RevealObserver";
 
@@ -26,7 +25,6 @@ export default async function HomePage({ params }: PageParams) {
       <PrinciplesSection dict={dict.principles} />
       <MethodologySection dict={dict.methodology} />
       <CaseStudiesSection dict={dict.caseStudies} />
-      <TeamSection dict={dict.team} lang={lang} />
       <LegacyCtaSection dict={dict.legacy} />
     </>
   );

@@ -117,14 +117,18 @@ export function Header({ lang, dict }: HeaderProps) {
     <>
       <header className="fixed top-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-md border-b border-gray-100/80">
         <nav className="max-w-[1280px] mx-auto flex items-center justify-between lg:grid lg:grid-cols-3 px-8 py-5 gap-8">
-          {/* Logo */}
-          <Link href={`/${lang}`}>
+          {/* 
+            Logo 
+            NOTA/REGLA: Siempre mantener 'shrink-0' tanto en el contenedor (<Link>) como en la <Image>.
+            Esto evita que flexbox reduzca o "aplaste" el logo en pantallas móviles estrechas. 
+          */}
+          <Link href={`/${lang}`} className="shrink-0">
             <Image
               src="/images/gpmf-logo-white.png"
               alt="GPMF Logo"
               width={120}
               height={40}
-              className="h-10 w-auto invert"
+              className="h-10 w-auto shrink-0 invert"
               priority
             />
           </Link>

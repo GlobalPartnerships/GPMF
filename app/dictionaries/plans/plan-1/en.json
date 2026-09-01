@@ -1,13 +1,13 @@
 {
   "id": "diagnostic",
   "category": "standard",
-  "name": "GPMF Diagnostic",
-  "subtitle": "Express Business Readiness Audit",
-  "price": "$500 USD",
-  "priceNote": "One-time payment",
+  "name": "GPMF DIAGNOSTIC",
+  "subtitle": "Express Business Readiness Audit with automated analysis",
+  "price": "$500",
+  "priceNote": "USD / One-time",
   "features": [
     "Extended diagnostic questionnaire access",
-    "Maturity Report (PDF) delivered in 48h",
+    "Maturity Report (PDF) in 48h",
     "30-min session to review findings"
   ]
 }

@@ -6,6 +6,7 @@ import { PartnersHero } from "@/app/components/partners/PartnersHero";
 import { ProfessionalsGrid } from "@/app/components/partners/ProfessionalsGrid";
 import { CorporatePartners } from "@/app/components/partners/CorporatePartners";
 import { PartnersCollaborationCta } from "@/app/components/partners/PartnersCollaborationCta";
+import { TeamSection } from "@/app/components/home/TeamSection";
 import styles from "@/app/components/partners/Partners.module.css";
 
 type PageParams = { params: Promise<{ lang: string }> };
@@ -34,6 +35,7 @@ export default async function PartnersPage({ params }: PageParams) {
         <PartnersHero dict={dict.hero} />
         <ProfessionalsGrid dict={dict.professionals} />
         <CorporatePartners dict={dict.corporatePartners} />
+        <TeamSection dict={dict.team} lang={lang} />
         <PartnersCollaborationCta dict={dict.cta} />
       </main>
     </>

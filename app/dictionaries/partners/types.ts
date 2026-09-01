@@ -26,4 +26,16 @@ export interface PartnersDict {
       scheduleCta: { label: string; href: string };
     };
   };
+  team: {
+    eyebrow: string;
+    headlinePart1: string;
+    headlineAccent: string;
+    description: string;
+    members: {
+      name: string;
+      role: string;
+    }[];
+    cta: string;
+    studioLocation: string;
+  };
 }

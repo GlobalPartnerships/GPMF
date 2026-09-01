@@ -113,6 +113,24 @@
       }
     ]
   },
+  "team": {
+    "eyebrow": "El Estudio",
+    "headlinePart1": "Conoce al",
+    "headlineAccent": "equipo GPMF.",
+    "description": "Nuestros especialistas reúnen décadas de sabiduría colectiva en negocios internacionales — estrategas, analistas, mediadores culturales y ex funcionarios comerciales trabajando bajo un mismo techo.",
+    "members": [
+      {
+        "name": "Marcela Sánchez Vargas",
+        "role": "Directora Fundadora · Operaciones Estratégicas"
+      },
+      {
+        "name": "Adriana Sánchez Halleux",
+        "role": "AgTech y Estrategia de Innovación"
+      }
+    ],
+    "cta": "Conoce a nuestro equipo",
+    "studioLocation": "Estudio · Bogotá, CO"
+  },
   "cta": {
     "eyebrow": "Colaboración Extendida",
     "title": "Una red viva para proyectos de alto riesgo y alto impacto.",
