@@ -261,23 +261,17 @@ Transform data into decisions. Strategic AI diagnostics for SMEs and NGOs with h
 ### AI-Powered Insights
 
 Data-driven decision making
-
 ## Our Services
 
 Complete AI and analytics solutions for your business
-
 1
-
 ### AI Strategy
-
 Strategic AI implementation planning
 
 2
-
 ### Data Analytics
 
 Advanced data analysis and insights
-
 3
 
 ### Machine Learning
@@ -287,7 +281,6 @@ Custom ML model development
 ---
 
 ## === ARCHIVO: diagnostico.html ===
-
 # 
 
 **Diagnóstico Estratégico**
@@ -333,7 +326,6 @@ Selecciona el rango / Select range... < $5,000 USD (Talleres / Semilla) / (Works
 Your Information
 
  
-
 **SOLICITAR SESIÓN DE DIAGNÓSTICO**  
 REQUEST DIAGNOSTIC SESSION
 

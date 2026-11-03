@@ -42,4 +42,5 @@ next-env.d.ts
 
 todo.md
 prompts.md
-REFERENCE_IMAGES/
+REFERENCE_IMAGES/desktop.ini
+**/desktop.ini
