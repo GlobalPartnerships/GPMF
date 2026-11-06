@@ -16,6 +16,14 @@
     "standard": "At GPMF, standard plans are coming soon. Stay tuned.",
     "custom": "At GPMF, custom plans are coming soon. Stay tuned."
   },
+  "diagnosisCta": {
+    "eyebrow": "Where to begin",
+    "headline": "Don't know what",
+    "headlineAccent": "to pick?",
+    "body": "Start simply — take one of our brief assessments. Ten minutes tells us where your organisation stands, and which of our methods it actually needs.",
+    "ctaLabel": "Diagnosis",
+    "footnote": "No account required · 10 minutes"
+  },
   "meta": {
     "title": "Plans & Pricing | GPMF",
     "description": "Explore GPMF strategic consulting plans — from diagnostics and sprints to executive partnerships."

@@ -16,6 +16,14 @@
     "standard": "En GPMF, los planes estándar están próximamente. Mantenete al tanto.",
     "custom": "En GPMF, los planes personalizados están próximamente. Mantenete al tanto."
   },
+  "diagnosisCta": {
+    "eyebrow": "Por dónde empezar",
+    "headline": "¿No sabés qué",
+    "headlineAccent": "elegir?",
+    "body": "Empezá simple — hacé uno de nuestros diagnósticos breves. Diez minutos nos dicen dónde está parada tu organización y cuál de nuestros métodos necesita realmente.",
+    "ctaLabel": "Diagnóstico",
+    "footnote": "Sin registro · 10 minutos"
+  },
   "meta": {
     "title": "Planes y Precios | GPMF",
     "description": "Explorá los planes de consultoría estratégica de GPMF — desde diagnósticos y sprints hasta alianzas ejecutivas."

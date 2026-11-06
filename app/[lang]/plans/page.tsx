@@ -6,6 +6,7 @@ import { PlansHeader } from "@/app/components/plans/PlansHeader";
 import { PlansGrid } from "@/app/components/plans/PlansGrid";
 import { DecoElements } from "@/app/components/plans/DecoElements";
 import { SideText } from "@/app/components/plans/SideText";
+import { DiagnosisCTA } from "@/app/components/plans/DiagnosisCTA";
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -38,7 +39,7 @@ export default async function PlansPage({ params }: PageParams) {
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet"
       />
-      <section className="pt-32 pb-32 relative overflow-hidden">
+      <section className="pt-32 relative overflow-hidden">
         <SideText line1={dict.sideText.line1} line2={dict.sideText.line2} />
         <DecoElements />
 
@@ -54,6 +55,16 @@ export default async function PlansPage({ params }: PageParams) {
           standardPlans={standardPlans}
           customPlans={customPlans}
           lang={lang}
+        />
+
+        <DiagnosisCTA
+          eyebrow={dict.diagnosisCta.eyebrow}
+          headline={dict.diagnosisCta.headline}
+          headlineAccent={dict.diagnosisCta.headlineAccent}
+          body={dict.diagnosisCta.body}
+          ctaLabel={dict.diagnosisCta.ctaLabel}
+          footnote={dict.diagnosisCta.footnote}
+          href={`/${lang}/diagnosis`}
         />
       </section>
     </>

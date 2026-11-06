@@ -52,7 +52,7 @@ export function PlansGrid({ dict, standardPlans, customPlans, lang }: PlansGridP
           </p>
         ) : (
           <div
-            className={`${styles.grid} grid gap-8 ${gridCols} ${fading ? styles.fading : ""}`}
+            className={`${styles.grid} grid gap-8 ${gridCols} ${fading ? styles.fading : ""} pb-32`}
           >
             {plans.map((plan) => (
               <PlanCard key={plan.id} plan={plan} cta={dict.cta} href={`/${lang}/diagnosis`} />

@@ -16,6 +16,14 @@
     "standard": "Bei GPMF kommen die Standardpläne bald. Bleiben Sie dran.",
     "custom": "Bei GPMF kommen die individuellen Pläne bald. Bleiben Sie dran."
   },
+  "diagnosisCta": {
+    "eyebrow": "Wo anfangen",
+    "headline": "Sie wissen noch nicht,",
+    "headlineAccent": "was Sie wählen sollen?",
+    "body": "Fangen Sie einfach an — machen Sie eine unserer kurzen Analysen. Zehn Minuten zeigen uns, wo Ihre Organisation steht und welche unserer Methoden sie wirklich braucht.",
+    "ctaLabel": "Diagnose",
+    "footnote": "Keine Anmeldung nötig · 10 Minuten"
+  },
   "meta": {
     "title": "Angebote und Preise | GPMF",
     "description": "Entdecken Sie die strategischen Beratungsangebote von GPMF — von Diagnosen und Sprints bis zu Executive-Partnerschaften."
