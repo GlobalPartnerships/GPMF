@@ -46,13 +46,13 @@ function LanguageDropdown({
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="group inline-flex items-center border border-outline px-3 py-2.5 transition-all duration-300 hover:border-burgundy text-foreground/60 hover:text-burgundy cursor-pointer"
+        className="group inline-flex items-center gap-1.5 border border-white/20 bg-white/5 px-2.5 py-1.5 rounded-full transition-all duration-300 hover:border-[#7A0F32] hover:bg-white/10 text-white/80 hover:text-white cursor-pointer text-[11px] font-medium tracking-wider uppercase"
         aria-label="Select language"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="22"
-          height="22"
+          width="15"
+          height="15"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -68,18 +68,27 @@ function LanguageDropdown({
           <path d="M19.1 18h-6.2" />
           <path d="M6.694 3l.793 .582" />
         </svg>
+        <span className="uppercase text-[11px] font-medium">{lang}</span>
+        <svg
+          className={`w-3 h-3 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
 
       {open && (
-        <div className="absolute right-0 top-8 bg-white border border-gray-100 rounded-lg shadow-lg py-1 min-w-[150px] z-50">
+        <div className="absolute right-0 top-10 bg-[#0B0F17] border border-white/15 rounded-lg shadow-2xl py-1.5 min-w-[150px] z-50">
           {localeConfig.map(({ locale, flag, label }) => (
             <Link
               key={locale}
               href={`/${locale}${pathWithoutLocale}`}
-              className={`flex items-center gap-3 px-4 py-2.5 text-[11px] uppercase tracking-[0.15em] font-medium transition-colors ${
+              className={`flex items-center gap-3 px-4 py-2 text-[11px] uppercase tracking-[0.15em] font-medium transition-colors ${
                 locale === lang
-                  ? "text-burgundy bg-burgundy/5"
-                  : "text-foreground/60 hover:text-burgundy hover:bg-gray-50"
+                  ? "text-[#7A0F32] bg-white/5 font-semibold"
+                  : "text-white/80 hover:text-white hover:bg-white/10"
               }`}
               onClick={() => {
                 setOpen(false);
@@ -88,7 +97,7 @@ function LanguageDropdown({
             >
               <span
                 className={`fi fi-${flag} fis rounded-full`}
-                style={{ width: 18, height: 18, flexShrink: 0 }}
+                style={{ width: 16, height: 16, flexShrink: 0 }}
               />
               {label}
             </Link>
@@ -107,59 +116,59 @@ export function Header({ lang, dict }: HeaderProps) {
 
   const navLinks = [
     { label: dict.home, href: `/${lang}` },
-    { label: dict.diagnosis, href: `/${lang}/diagnosis` },
     { label: dict.pilars, href: `/${lang}/pilars` },
-    { label: dict.partners, href: `/${lang}/partners` },
     { label: dict.services, href: `/${lang}/services` },
+    { label: dict.plans, href: `/${lang}/plans` },
+    { label: dict.partners, href: `/${lang}/partners` },
   ];
 
   return (
     <>
-      <header className="fixed top-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-md border-b border-gray-100/80">
-        <nav className="max-w-[1280px] mx-auto flex items-center justify-between lg:grid lg:grid-cols-3 px-8 py-5 gap-8">
-          {/* 
-            Logo 
-            NOTA/REGLA: Siempre mantener 'shrink-0' tanto en el contenedor (<Link>) como en la <Image>.
-            Esto evita que flexbox reduzca o "aplaste" el logo en pantallas móviles estrechas. 
-          */}
-          <Link href={`/${lang}`} className="shrink-0">
+      <header className="fixed top-0 w-full z-50 bg-black border-b border-white/10">
+        <nav className="max-w-[1280px] mx-auto flex items-center justify-between px-6 lg:px-8 py-3.5">
+          {/* Logo — Blanco oficial, sin filtro invert */}
+          <Link href={`/${lang}`} className="shrink-0 flex items-center">
             <Image
               src="/images/gpmf-logo-white.png"
               alt="GPMF Logo"
               width={120}
               height={40}
-              className="h-10 w-auto shrink-0 invert"
+              className="h-9 w-auto shrink-0 object-contain"
               priority
             />
           </Link>
 
-          {/* Desktop nav — centered */}
-          <div className="hidden lg:flex items-center justify-center gap-10 text-[11px] uppercase tracking-[0.22em] text-foreground/70 font-medium">
+          {/* Desktop nav — Centrada, enlaces en Inter mayúsculas espaciadas */}
+          <div className="hidden lg:flex items-center justify-center gap-8 text-[11px] uppercase tracking-[0.2em] font-medium text-white/80">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="nav-link">
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-colors duration-200 hover:text-[#7A0F32]"
+              >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* Desktop right side */}
-          <div className="flex items-center justify-end gap-4">
+          {/* Desktop right side: Selector de idiomas + Botón píldora Burgundy */}
+          <div className="flex items-center justify-end gap-3.5">
             {/* Language switcher */}
-            <div className="hidden xl:flex">
+            <div className="hidden sm:flex">
               <LanguageDropdown lang={lang} pathWithoutLocale={pathWithoutLocale} />
             </div>
 
-            {/* Plans */}
+            {/* Botón Píldora Burgundy apuntando a Diagnóstico */}
             <Link
-              href={`/${lang}/plans`}
-              className="btn-sweep inline-flex items-center justify-center bg-burgundy text-white px-6 h-[42px] text-[11px] uppercase tracking-[0.22em] rounded whitespace-nowrap"
+              href={`/${lang}/diagnosis`}
+              className="inline-flex items-center justify-center rounded-full bg-[#7A0F32] hover:bg-[#8F123B] text-white px-5 py-2 text-[11px] uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:scale-105 whitespace-nowrap shadow-sm"
             >
-              <span>{dict.plans}</span>
+              <span>{dict.diagnosis}</span>
             </Link>
 
-            {/* Hamburger */}
+            {/* Mobile menu button */}
             <button
-              className="lg:hidden text-foreground/70 ml-2 cursor-pointer transition-transform duration-300 hover:scale-[1.1]"
+              className="lg:hidden text-white/80 hover:text-white p-1 ml-1 cursor-pointer transition-transform duration-200 hover:scale-110"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >

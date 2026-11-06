@@ -12,11 +12,11 @@ interface MenuActionsProps {
 export function MenuActions({ lang, dict, onClose }: MenuActionsProps) {
   return (
     <Link
-      href={`/${lang}/plans`}
-      className="btn-sweep bg-burgundy text-white w-full px-8 py-4 text-[11px] uppercase tracking-[0.28em] text-center"
+      href={`/${lang}/diagnosis`}
+      className="inline-flex items-center justify-center rounded-full bg-[#7A0F32] hover:bg-[#8F123B] text-white w-full px-8 py-3.5 text-[11px] uppercase tracking-[0.22em] text-center font-medium transition-all"
       onClick={onClose}
     >
-      <span>{dict.plans}</span>
+      <span>{dict.diagnosis}</span>
     </Link>
   );
 }
