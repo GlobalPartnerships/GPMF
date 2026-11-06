@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import type { HomeDict } from "@/app/dictionaries";
 import styles from "./CaseStudiesSection.module.css";
@@ -8,10 +9,10 @@ interface CaseStudiesSectionProps {
   dict: HomeDict["caseStudies"];
 }
 
-const gradients = [
-  "bg-gradient-to-br from-burgundy/40 via-transparent to-black/60",
-  "bg-gradient-to-tr from-charcoal via-transparent to-burgundy/30",
-  "bg-gradient-to-bl from-burgundy/40 via-transparent to-black",
+const caseImages = [
+  "/images/pack_imagenes_web/18_caso_estudio_casa_normandia.jpg",
+  "/images/pack_imagenes_web/19_caso_estudio_agrotech.jpg",
+  "/images/pack_imagenes_web/16_dashboard_analitica_dash.png",
 ];
 
 export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
@@ -39,7 +40,7 @@ export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
           <button
             onClick={() => scroll("left")}
             aria-label="Previous"
-            className="w-12 h-12 border border-white/15 text-white/80 hover:bg-white/10 transition flex items-center justify-center"
+            className="w-12 h-12 border border-white/15 text-white/80 hover:bg-white/10 transition flex items-center justify-center cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -48,7 +49,7 @@ export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
           <button
             onClick={() => scroll("right")}
             aria-label="Next"
-            className="w-12 h-12 border border-white/15 text-white/80 hover:bg-white/10 transition flex items-center justify-center"
+            className="w-12 h-12 border border-white/15 text-white/80 hover:bg-white/10 transition flex items-center justify-center cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -63,14 +64,21 @@ export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
       >
         {dict.cases.map((c, i) => {
           const cardContent = (
-            <div className="bg-black border border-white/10 hover:border-rose-dim/40 h-full flex flex-col">
+            <div className="bg-black border border-white/10 hover:border-rose-dim/40 h-full flex flex-col group">
               <div className="aspect-[5/3] bg-[#1a1a1a] overflow-hidden relative">
-                <div className={`absolute inset-0 ${gradients[i % gradients.length]}`} />
-                <div className="absolute top-6 left-6 right-6 flex justify-between text-[10px] tracking-[0.22em] uppercase text-white/60">
+                <Image
+                  src={caseImages[i % caseImages.length]}
+                  alt={c.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 420px"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-85"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/30" />
+                <div className="absolute top-6 left-6 right-6 flex justify-between text-[10px] tracking-[0.22em] uppercase text-white/90 font-medium z-10 drop-shadow">
                   <span>{c.number}</span>
                   <span>{c.category}</span>
                 </div>
-                <div className="absolute bottom-6 left-6 font-serif italic text-white/70 text-2xl">
+                <div className="absolute bottom-6 left-6 font-serif italic text-white text-2xl z-10 drop-shadow-md">
                   {c.title}
                 </div>
               </div>
@@ -86,11 +94,11 @@ export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
                 <div className="mt-12 flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-[1px] bg-white/30" />
-                    <span className="text-[10px] tracking-[0.22em] uppercase text-white">
+                    <span className="text-[10px] tracking-[0.22em] uppercase text-white font-medium">
                       {c.cta}
                     </span>
                   </div>
-                  <svg className="w-5 h-5 text-white/60 group-hover:text-rose-dim transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-white/60 group-hover:text-rose-dim transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
                   </svg>
                 </div>
@@ -98,26 +106,26 @@ export function CaseStudiesSection({ dict }: CaseStudiesSectionProps) {
             </div>
           );
 
-          return c.link ? (
-            <a
+          return (
+            <div
               key={c.number}
-              href={c.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.caseCard} min-w-[80vw] md:min-w-[58%] lg:min-w-[44%] snap-start group cursor-pointer block`}
+              className={`${styles.card} flex-shrink-0 w-[88vw] sm:w-[460px] snap-start`}
             >
-              {cardContent}
-            </a>
-          ) : (
-            <article
-              key={c.number}
-              className={`${styles.caseCard} min-w-[80vw] md:min-w-[58%] lg:min-w-[44%] snap-start group`}
-            >
-              {cardContent}
-            </article>
+              {c.link ? (
+                <a
+                  href={c.link}
+                  target={c.link.startsWith("http") ? "_blank" : undefined}
+                  rel={c.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="block h-full group"
+                >
+                  {cardContent}
+                </a>
+              ) : (
+                <div className="h-full group">{cardContent}</div>
+              )}
+            </div>
           );
         })}
-        <div className="min-w-[32px]" />
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ export function Footer({ dict }: FooterProps) {
         {/* Identidad institucional: Logo blanco oficial + Arquitectura de 3 Nodos */}
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
           <Image
-            src="/images/gpmf-logo-white.png"
+            src="/images/pack_imagenes_web/01_logo_blanco_horizontal.png"
             alt="GPMF Logo"
             width={110}
             height={36}

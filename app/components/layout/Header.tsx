@@ -129,7 +129,7 @@ export function Header({ lang, dict }: HeaderProps) {
           {/* Logo — Blanco oficial, sin filtro invert */}
           <Link href={`/${lang}`} className="shrink-0 flex items-center">
             <Image
-              src="/images/gpmf-logo-white.png"
+              src="/images/pack_imagenes_web/01_logo_blanco_horizontal.png"
               alt="GPMF Logo"
               width={120}
               height={40}

@@ -11,38 +11,40 @@ export function TeamSection({ dict, lang }: TeamSectionProps) {
     <section id="team" className="bg-white py-32 lg:py-40 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-          <div className="relative w-full min-h-[400px] lg:min-h-[600px] grid grid-cols-2">
-            <div className="relative w-full h-full p-4 lg:p-12">
+          <div className="relative w-full min-h-[400px] lg:min-h-[600px] grid grid-cols-2 p-4 lg:p-12 gap-4 sm:gap-6">
+            <div className="relative w-full h-full">
               <a
                 href="https://www.linkedin.com/in/marcelasanchezintercultural/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full h-full transition-opacity hover:opacity-80"
+                className="block w-full h-full transition-opacity hover:opacity-85"
               >
                 <Image
-                  alt="Marce"
-                  className="w-full h-full object-cover rounded-xl shadow-sm"
-                  src="/marceperfil.jpg"
+                  alt="Marcela Sánchez Vargas"
+                  className="w-full h-full object-cover rounded-xl shadow-md"
+                  src="/images/pack_imagenes_web/04_perfil_marcela_sanchez.jpg"
                   width={360}
                   height={820}
                 />
               </a>
             </div>
-            <a
-              href="https://www.linkedin.com/in/adrianasancheztechforesight/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full h-full transition-opacity hover:opacity-80"
-            >
-              <Image
-                alt="Adriana"
-                className="w-full h-full object-cover"
-                src="/workshop_adr.jpg"
-                width={360}
-                height={820}
-              />
-            </a>
-            <div className="absolute bottom-8 left-8 text-white text-[10px] tracking-[0.32em] uppercase opacity-90 drop-shadow-md pointer-events-none">
+            <div className="relative w-full h-full">
+              <a
+                href="https://www.linkedin.com/in/adrianasancheztechforesight/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full transition-opacity hover:opacity-85"
+              >
+                <Image
+                  alt="Adriana Sánchez Halleux"
+                  className="w-full h-full object-cover rounded-xl shadow-md"
+                  src="/images/pack_imagenes_web/05_perfil_adriana_sanchez.jpg"
+                  width={360}
+                  height={820}
+                />
+              </a>
+            </div>
+            <div className="absolute bottom-6 left-8 sm:left-16 text-white text-[10px] tracking-[0.32em] uppercase opacity-90 drop-shadow-md pointer-events-none">
               {dict.studioLocation}
             </div>
           </div>

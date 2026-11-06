@@ -1,9 +1,3 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
-
 # GPMF Web Platform — Brand Manual, Architecture & AI Operations
 
 Este documento contiene las reglas de marca, arquitectura frontend y lineamientos operativos para el desarrollo y despliegue del portal web de **Global Partnerships & Multidisciplinary Firm (GPMF)** en Vercel. TODA interacción de la IA y desarrolladores debe regirse estrictamente por estas reglas.
